@@ -1,0 +1,491 @@
+@use "./partials/_global.scss" as *;
+@use "./partials/_variables.scss" as *;
+@use "./partials/_mixins.scss" as *;
+
+.hero {
+    color: $White;
+    background-image: url("../assets/images/hero-bio.jpg");
+    background-position: center;
+    background-size: cover;
+    min-width: $mobile-min;
+    max-width: 100%;
+    height: 28rem;
+
+    &__body {
+        height: 20rem;
+        background: none;
+        display: flex;
+        align-items: center;
+        margin: 0 16px;
+        width: auto;
+
+        &__header {
+            @include mobile-page-header;
+            margin: 0;
+            filter: none;
+        }
+    }
+
+    @include tablet {
+        min-width: $tablet-breakpoint;
+        max-width: 100%;
+        height: 40rem;
+
+        &__body {
+            height: 45rem;
+            display: flex;
+            align-items: center;
+            padding: 0;
+            margin: 0 36px;
+
+            &__header {
+                @include tablet-page-header;
+                margin: 0;
+            }
+        }
+    }
+
+    @include desktop {
+        min-width: $desktop-breakpoint;
+        max-width: 100%;
+        height:50rem;
+
+
+        &__body {
+            max-width: 1280px;
+            display: flex;
+            align-items: center;
+            margin: auto;
+
+            &__header {
+                margin: 0;
+            }
+        }
+    }
+}
+.about {
+    background-color: $White;
+    margin: 0 16px;
+    width: auto;
+
+    &__header {
+        @include mobile-section-header;
+        padding-top: 24px;
+        padding-bottom: 16px;
+        margin: 0;
+    }
+
+    &__container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+        margin: 0;
+    }
+
+    &__quote {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        &__picture {
+            width: 100%;
+            min-height: 10rem;
+            max-height: 30rem;
+        }
+
+        &__copy {
+            color: $BandSite-Black;
+            font-size: 1.2rem;
+            line-height: 2rem;
+            font-weight: 600;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            padding: 16px 0;
+
+            &--text {
+                padding: 0;
+            }
+        }
+    }
+
+    &__description {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 16px;
+
+        &__header {
+            @include mobile-sub-header;
+        }
+
+        &__copy {
+            @include mobile-body-copy;
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+        }
+    }
+
+    @include tablet {
+        margin: 0 36px;
+        padding: 8px 0;
+
+        &__header {
+            @include tablet-section-header;
+            padding: 32px 0;
+            margin: 0;
+        }
+
+        &__container {
+            min-width: 40rem;
+            max-width: 100rem;
+            padding: 0 2.5rem;
+            margin: 0;
+        }
+
+        &__quote {
+            &__picture {
+                min-height: 30rem;
+                max-height: 40rem;
+                padding: 0;
+            }
+
+            &__copy {
+                flex-direction: column;
+                padding: 24px 0;
+            }
+
+            &--text {
+                font-size: 1.6rem;
+                line-height: 2.4rem;
+                font-weight: 600;
+                padding: 0;
+            }
+
+            &--author {
+                font-size: 1.2rem;
+                line-height: 2.4rem;
+                font-weight: 600;
+                padding: 8px 0;
+            }
+        }
+
+        &__description {
+            gap: 0;
+            &__header {
+                @include tablet-sub-header;
+                padding: 24px 0;
+            }
+
+            &__copy {
+                @include tablet-body-copy;
+                display: flex;
+                flex-direction: row;
+                gap: 32px;
+                padding: 0;
+            }
+        }
+    }
+
+    @include desktop {
+        margin: auto;
+        max-width: 1280px;
+        padding: 24px 0;
+
+        &__container {
+            padding: 0 3rem;
+        }
+
+        &__quote {
+            &__picture {
+                height: 55rem;
+                padding: 0;
+            }
+
+            &__copy {
+                padding: 24px 0;
+            }
+
+            &--text {
+                width: 85%;
+                padding: 0;
+            }
+            &--author {
+                width: 85%;
+            }
+        }
+    }
+}
+
+.gallery-background {
+    background-color: $Alabaster;
+    width: 100%;
+}
+.gallery {
+    margin: 0 16px;
+    width: auto;
+    padding-bottom: 16px;
+
+    &__header {
+        @include mobile-section-header;
+        padding-top: 24px;
+        margin: 0;
+    }
+
+    &__album {
+        display: inline-grid;
+        justify-content: center;
+        width: 100%;
+        grid-template-columns: fit-content(100%);
+        gap: 16px;
+        padding: 0;
+        margin: 0;
+    }
+
+    &__photo {
+        width: 100%;
+        filter: grayscale(50%);
+
+        &:hover {
+            filter: grayscale(0);
+        }
+    }
+
+    @include tablet {
+        margin: 0 32px;
+        padding-top: 8px 0;
+        padding-bottom: 32px;
+
+        &__header {
+            @include tablet-section-header;
+            padding: 2rem 0;
+            margin: 0;
+        }
+
+        &__album {
+            gap: 2rem;
+            grid-template-columns: fit-content(33%) fit-content(33%) fit-content(33%);
+            margin: 0;
+            padding: 0;
+        }
+    }
+
+    @include desktop {
+        max-width: 1280px;
+        margin: auto;
+
+        &__header {
+            padding: 3rem 0;
+        }
+
+        &__album {
+            padding: 0;
+        }
+    }
+}
+.comments {
+    margin: 0 16px;
+    padding: 2rem 0;
+
+    &__header {
+        @include mobile-section-header;
+        padding: 1.5rem 0;
+    }
+
+    &__form {
+        @include mobile-body-copy;
+        border: none;
+        border-bottom: 1px solid $Mercury;
+
+        &__fields {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            margin: 0;
+            border: none;
+        }
+
+        &--label {
+            @include mobile-body-copy;
+            color: $Silver;
+            padding-top: 1rem;
+        }
+
+        &--input {
+            @include mobile-body-copy;
+            background-color: $Alabaster;
+            min-height: 36px;
+            width: 100%;
+            padding: 12px;
+            border: 1px solid $Mercury;
+            border-radius: 4px;
+
+            &::placeholder {
+                color: $BandSite-Black;
+                opacity: 1;
+            }
+
+            &:focus {
+                //box-shadow to render border like mock up in Firefox
+                outline: none;
+                background-color: $White;
+                box-shadow: 0 0 1px $BandSite-Black;
+                -moz-box-shadow: 0 0 1px $BandSite-Black;
+                -webkit-box-shadow: 0 0 1px $BandSite-Black;
+                border-color: $BandSite-Black;
+
+                &::placeholder {
+                    color: transparent;
+                }
+
+                &:invalid {
+                    outline: none;
+                    box-shadow: 0 0 1px $Invalid;
+                    -moz-box-shadow: 0 0 1px $Invalid;
+                    -webkit-box-shadow: 0 0 1px $Invalid;
+                    border-color: $Invalid;
+                }
+            }
+
+            &:valid {
+                background-color: $White;
+            }
+
+            &#comment {
+                min-height: 10rem;
+                resize: none;
+            }
+        }
+
+        &__button {
+            @include mobile-labels-buttons;
+            background-color: $BandSite-Black;
+            color: $White;
+            border: none;
+            height: 4rem;
+            min-width: 150px;
+            padding: 1rem 32px;
+            border-radius: 4px;
+            margin: 1rem 0;
+
+            &:hover {
+                background-color: $BandSite-DarkBlack;
+            }
+        }
+    }
+
+    &__picture {
+        max-width: 4rem;
+        max-height: 4rem;
+        border-radius: 50%;
+        margin-top: 3rem;
+    }
+
+    &__container {
+        display: flex;
+        flex-direction: row;
+        gap: 16px;
+    }
+
+    &__item {
+        @include mobile-body-copy;
+        display:flex;
+        flex-direction:row;
+        gap:16px;
+        padding:2rem 0;
+        border-bottom:1px solid $Mercury;
+
+        &__picture {
+            width: 4rem;
+            height: 4rem;
+            border-radius: 50%;
+
+            &#notLoaded {
+                display: none;
+            }
+
+            &--placeholder {
+                background-color: $Mercury;
+            }
+        }
+        &__upper {
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+        }
+        &__name {
+            @include mobile-body-copy;
+            font-weight: 600;
+        }
+
+        &__container {
+            width: 100%;
+        }
+
+        &__date {
+            color: $Silver;
+            margin-left: auto;
+        }
+        &__content {
+            width:100%;
+            padding:0.5rem 0;
+        }
+    }
+
+    @include tablet {
+        margin: 0 32px;
+        padding: 2rem 0;
+
+        &__header {
+            @include tablet-section-header;
+        }
+
+        &__form {
+            @include tablet-body-copy;
+            margin: 0 4rem;
+
+            &__fields {
+                margin: 0;
+            }
+
+            &--label {
+                @include tablet-body-copy;
+            }
+
+            &__button {
+                @include tablet-labels-buttons;
+                max-width: 15rem;
+                margin: 1rem 0;
+                margin-left: auto;
+            }
+        }
+        &__list {
+            margin: 0 4rem;
+        }
+        &__item {
+            @include tablet-body-copy;
+
+            &__name {
+                @include tablet-body-copy;
+                font-weight: 600;
+            }
+        }
+    }
+    @include desktop {
+        max-width: 1280px;
+        margin: auto;
+
+        &__form {
+            margin: 0 16rem;
+
+            &__fields {
+                margin: 0;
+            }
+        }
+        &__list {
+            margin: 0 16rem;
+        }
+    }
+}

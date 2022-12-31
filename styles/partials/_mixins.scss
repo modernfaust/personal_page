@@ -1,0 +1,126 @@
+@use "_variables.scss" as *;
+
+//font family
+@mixin load-fonts {
+  @font-face {
+    font-family: "AvenirNext";
+    src: url("../../assets/fonts/AvenirNextLTPro-Regular.otf") format("opentype");
+    src: url("../../assets/fonts/Alternative_files/AvenirNextLTPro.ttf") format("truetype");
+    font-weight: 400;
+  }
+  @font-face {
+    font-family: "AvenirNext";
+    src: url("../../assets/fonts/AvenirNextLTPro-Demi.otf") format("opentype");
+    src: url("../../assets/fonts/Alternative_files/AvenirNextLTProDemi.ttf") format("truetype");
+    font-weight: 600;
+  }
+  @font-face {
+    font-family: "AvenirNext";
+    src: url("../../assets/fonts/AvenirNextLTPro-Bold.otf") format("opentype");
+    src: url("../../assets/fonts/Alternative_files/AvenirNextLTProBold.ttf") format("truetype");
+    font-weight: 700;
+  }
+}
+
+//spacing
+@mixin remove-padding-margin {
+  padding: 0;
+  margin: 0;
+}
+
+//border
+@mixin border-bottom-nav {
+  border-bottom: 4px solid $White;
+}
+
+//media queries
+@mixin mobile {
+  @media screen and (max-width: $mobile-breakpoint) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media screen and (min-width: $tablet-breakpoint) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media screen and (min-width: $desktop-breakpoint) {
+    @content;
+  }
+}
+
+//font sizing
+@mixin mobile-page-header {
+  font-size: 2.5rem;
+  line-height: 3rem;
+  font-weight: 700;
+}
+
+@mixin mobile-section-header {
+  font-size: 2.5rem;
+  line-height: 3rem;
+  font-weight: 600;
+}
+
+@mixin mobile-sub-header {
+  font-size: 1.5rem;
+  line-height: 2rem;
+  font-weight: 600;
+}
+
+@mixin mobile-body-copy {
+  font-size: 1.4rem;
+  line-height: 2.3rem;
+  font-weight: 400;
+}
+
+@mixin mobile-footer-copy {
+  font-size: 1.4rem;
+  line-height: 2.3rem;
+  font-weight: 400;
+}
+
+@mixin mobile-labels-buttons {
+  font-size: 1.5rem;
+  line-height: 1.5rem;
+  font-weight: 600;
+}
+
+@mixin tablet-page-header {
+  font-size: 5rem;
+  line-height: 5.2rem;
+  font-weight: 700;
+}
+
+@mixin tablet-section-header {
+  font-size: 4rem;
+  line-height: 4.5rem;
+  font-weight: 600;
+}
+
+@mixin tablet-sub-header {
+  font-size: 2.0rem;
+  line-height: 2.5rem;
+  font-weight: 600;
+}
+
+@mixin tablet-body-copy {
+  font-size: 1.4rem;
+  line-height: 1.8rem;
+  font-weight: 400;
+}
+
+@mixin tablet-footer-copy {
+  font-size: 1.2rem;
+  line-height: 1.8rem;
+  font-weight: 400;
+}
+
+@mixin tablet-labels-buttons {
+  font-size: 1.4rem;
+  line-height: 1.6rem;
+  font-weight: 700;
+}
