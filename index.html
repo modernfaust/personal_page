@@ -11,10 +11,10 @@
 </head>
 
 <body>
+    <!-- To-do: Nav-bar header. ref: https://andrewborstein.com/ -->
     <header class="site-header">
         <nav class="site-header site-header__nav">
-            <a href="./index.html"><img class="site-header__nav site-header__nav__wordmark"
-                    src="assets/logos/Logo-bandsite.svg" alt="edward-logo"></a>
+            <a class="site-header__name" href="./index.html">Edward Lee</a>
             <ul class="site-header__nav site-header__nav__directory">
                 <li id="open"><a href="./assets/resume.png">
                         <i class="fa-solid fa-file"></i></a></li>
@@ -26,47 +26,94 @@
         </nav>
     </header>
     <main>
-        <div class="hero" title="hero">
-            <section class="hero hero__body">
-                <h2 class="hero__body hero__body__header">Edward Lee</h2>
-            </section>
-        </div>
-        <section class="about">
-            <h3 class="about about__header">Work Experience</h3>
-            <div class="about about__experience">
-                <article class="about__experience about__experience__card">
-                    <p class="about__experience--date">2020-2022</p>
-                    <h3 class="about__experience--header">Broadridge Financial</h3>
-                    <p class="about__experience--position">Support Analyst</p>
-                    <p class="about__experience--skills">SQL, Shell, VBA, Python</p>
-                    <p class="about__experience--description">Wrote modules in Python and VBA to augment data processing, visualization & analysis</p>
-                    <p class="about__experience--description">Wrote SQL scripts to monitor production issues and aid with product analysis</p>
-                    <p class="about__experience--description">Perform root cause analysis to debug issues in production and pre-prod</p>
-                    <p class="about__experience--description">Log & escalate issues to Dev, QA and Product teams via ITSM and JIRA</p>
+        <section class="hero">
+            <h2 class="hero hero__header">Edward Lee</h2>
+        </section>
+        <section class="work">
+            <h3 class="work work__header">Experience</h3>
+            <div class="work work__experience">
+                <article class="work__experience work__experience__card">
+                    <div class="work__experience work__experience--content">
+                        <div class="work__experience work__experience__company">
+                            <a href = "https://www.broadridge.com/"><img class="work__experience__company work__experience--logo" src="assets/images/Broadridge_Financial_Solutions_Logo.svg" alt="br-logo"></a>
+                            <h3 class="work__experience__company work__experience--header">Broadridge</h3>
+                        </div>
+                        <div class="work__experience work__experience__details">
+                            <p class="work__experience--position">Support Analyst</p>
+                            <p class="work__experience--skills">SQL, Shell, VBA, Python</p>
+                            <ul class="work__experience work__experience__tasks">
+                                <li class="work__experience--description">Wrote modules in Python and VBA to augment data processing, visualization & analysis</li>
+                                <li class="work__experience--description">Wrote SQL scripts to monitor production issues and aid with product analysis</li>
+                                <li class="work__experience--description">Perform root cause analysis to debug issues in production and pre-prod</li>
+                                <li class="work__experience--description">Log & escalate issues to Dev, QA and Product teams via ITSM and JIRA</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="work__experience work__experience__location">
+                        <p class="work__experience--date">2020 - Present | Toronto, ON</p>
+                    </div>
                 </article>
-                <article class="about__experience about__experience__card">
-                    <p class="about__experience--date">2018-2019</p>
-                    <h3 class="about__experience--header">Guidehouse (formerly Navigant)</h3>
-                    <p class="about__experience--position">Consultant</p>
-                    <p class="about__experience--skills">Excel, SQL</p>
-                    <p class="about__experience--description">Draft risk reports for bank client's product line using SQL and Excel</p>
-                    <p class="about__experience--description">Draft weekly status reports for upper management and client stakeholders</p>
-                    <p class="about__experience--description">Establish & maintain relationships with client decision makers</p>
+                <article class="work__experience work__experience__card">
+                    <div class="work__experience work__experience--content">
+                        <div class="work__experience work__experience__company">
+                            <a href = "https://guidehouse.com/?lang=en"><img class="work__experience__company work__experience--logo" src="assets/images/guidehouse_506_506.png" alt="br-logo"></a>
+                            <h3 class="work__experience__company work__experience--header">Guidehouse (formerly Navigant)</h3>
+                        </div>
+                        <div class="work__experience work__experience__details">
+                            <p class="work__experience--position">Consultant</p>
+                            <p class="work__experience--skills">SQL, Excel</p>
+                            <ul class="work__experience work__experience__tasks">
+                                <li class="work__experience--description">Draft risk reports for bank client's product line using SQL and Excel</li>
+                                <li class="work__experience--description">Draft weekly status reports for upper management and client stakeholders</li>
+                                <li class="work__experience--description">Establish & maintain relationships with client decision makers</li>   
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="work__experience work__experience__location">
+                        <p class="work__experience--date">2018 - 2019 | Toronto, ON</p>
+                    </div>
                 </article>
-                <article class="about__experience about__experience__card">
-                    <p class="about__experience--date">2017</p>
-                    <h3 class="about__experience--header">Scotiabank</h3>
-                    <p class="about__experience--position">Auditor (Intern)</p>
+                <article class="work__experience work__experience__card">
+                    <div class="work__experience work__experience--content">
+                        <div class="work__experience work__experience__company">
+                            <a href = "https://www.scotiabank.com"><img class="work__experience__company work__experience--logo" src="assets/images/Scotiabank-logo.png" alt="br-logo"></a>
+                            <h3 class="work__experience__company work__experience--header">Scotiabank</h3>
+                        </div>
+                        <div class="work__experience work__experience__details">
+                            <p class="work__experience--position">Auditor</p>
+                        </div>
+                    </div>
+                    <div class="work__experience work__experience__location">
+                        <p class="work__experience--date">2017 | Toronto, ON</p>
+                    </div>
                 </article>
-                <article class="about__experience about__experience__card">
-                    <p class="about__experience--date">2016</p>
-                    <h3 class="about__experience--header">Ontario Government</h3>
-                    <p class="about__experience--position">Auditor (Intern)</p>
+                <article class="work__experience work__experience__card">
+                    <div class="work__experience work__experience--content">
+                        <div class="work__experience work__experience__company">
+                            <a href = "https://www.ontario.ca"><img class="work__experience__company work__experience--logo" src="assets/images/ontario@2x-print.png" alt="br-logo"></a>
+                            <h3 class="work__experience__company work__experience--header">Ontario Government</h3>
+                        </div>
+                        <div class="work__experience work__experience__details">
+                            <p class="work__experience--position">Auditor</p>
+                        </div>
+                    </div>
+                    <div class="work__experience work__experience__location">
+                        <p class="work__experience--date">2016 | Toronto, ON</p>
+                    </div>
                 </article>
-                <article class="about__experience about__experience__card">
-                    <p class="about__experience--date">2015</p>
-                    <h3 class="about__experience--header">PwC</h3>
-                    <p class="about__experience--position">Associate</p>
+                <article class="work__experience work__experience__card">
+                    <div class="work__experience work__experience--content">
+                        <div class="work__experience work__experience__company">
+                            <a href = "https://www.pwc.com/"><img class="work__experience__company work__experience--logo" src="assets/images/PricewaterhouseCoopers_Logo.svg.png" alt="br-logo"></a>
+                            <h3 class="work__experience__company work__experience--header">PricewaterhouseCoopers</h3>
+                        </div>
+                        <div class="work__experience work__experience__details">
+                            <p class="work__experience--position">Associate</p>
+                        </div>
+                    </div>
+                    <div class="work__experience work__experience__location">
+                        <p class="work__experience--date">2015 | Toronto, ON</p>
+                    </div>
                 </article>
             </div>
         </section>

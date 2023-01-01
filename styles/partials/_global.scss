@@ -4,7 +4,7 @@
 @include load-fonts;
 
 * {
-    font-family: "AvenirNext";
+    font-family: 'Hind Siliguri', sans-serif;
     font-weight: 400;
     @include remove-padding-margin;
     box-sizing: border-box;
@@ -39,10 +39,11 @@ main {
 a {
     @include remove-padding-margin;
     text-decoration: none;
+    width:fit-content;
+    height:fit-content;
 }
 li {
     list-style: none;
-    text-align: center;
 }
 .site-header {
     color: $White;
@@ -53,9 +54,8 @@ li {
         display: flex;
         flex-direction: column;
         align-items: center;
-        padding-top: 0.5rem;
 
-        &__wordmark {
+        &__name {
             width: 8rem;
         }
 
@@ -63,7 +63,9 @@ li {
             display: flex;
             flex-direction: row;
             align-items: center;
-            width: 100%;
+            gap:2rem;
+            padding:0;
+            //width: 100%;
         }
     }
 
