@@ -22,7 +22,7 @@
   }
 } */
 
-@mixin load-fonts {
+/* @mixin load-fonts {
   @font-face {
     font-family: 'Hind Siliguri', sans-serif;
     src:url("../../assets/fonts/HindSiliguri-Regular.ttf") format("truetype");
@@ -47,6 +47,14 @@
     font-family: 'Hind Siliguri', sans-serif;
     src:url("../../assets/fonts/HindSiliguri-Bold.ttf") format("truetype");
     font-weight:700;
+  }
+} */
+@mixin load-fonts {
+  @font-face {
+    font-family: "Anybody";
+    src:url("../../assets/fonts/Anybody-VariableFont_wdth\,wght.ttf") format("truetype-variations");
+    //src:url("../../assets/fonts/Anybody-Italic-VariableFont_wdth\,wght.ttf") format("truetype-variations");
+    font-weight: 1 999;
   }
 }
 
