@@ -30,8 +30,8 @@
             <h2 class="hero hero__header">Edward Lee</h2>
         </section>
         <section class="work">
-            <h3 class="work work__header">Experience</h3>
-            <div class="work work__experience">
+            <h3 class="work__header">Experience</h3>
+            <div class="work__experience">
                 <article class="work__experience__card">
                     <div class="work__experience--content">
                         <div class="work__experience__company">
@@ -81,6 +81,10 @@
                         </div>
                         <div class="work__experience__details">
                             <p class="work__experience--position">Auditor</p>
+                            <ul class="work__experience__tasks">
+                                <li class="work__experience--description">Detected critical error in SQL script, saving the bank $1,000,000+ in compliance fees</li>
+                                <li class="work__experience--description">Managed the overhaul of team intranet website by adding trilingual support, blogging and accessibility options</li>
+                            </ul>
                         </div>
                     </div>
                     <div class="work__experience__location">
@@ -95,6 +99,9 @@
                         </div>
                         <div class="work__experience__details">
                             <p class="work__experience--position">Auditor</p>
+                            <ul class="work__experience__tasks">
+                                <li class="work__experience--description">Streamline government's tax collection system by identifying weaknesses in internal controls</li>
+                            </ul>
                         </div>
                     </div>
                     <div class="work__experience__location">
@@ -109,6 +116,9 @@
                         </div>
                         <div class="work__experience__details">
                             <p class="work__experience--position">Associate</p>
+                            <ul class="work__experience__tasks">
+                                <li class="work__experience--description">Provide international tax services to 300+ high-net worth clients, exceeding weekly milestones by 50%</li>
+                            </ul>
                         </div>
                     </div>
                     <div class="work__experience__location">
@@ -119,111 +129,119 @@
         </section>
         <section class="education">
             <h3 class="education__header">Education</h3>
-            <article class="education__card">
-                <div class="education__card__content">
-                    <div class="education__card--school">
-                        <a href = "https://www.brainstation.io"><img class="education__card--logo" src="assets/images/bs-asset.png" alt="bs-logo"></a>
-                        <h3 class="education__card__header">Brainstation</h3>
+            <div class="education__schools">
+                <article class="education__card">
+                    <div class="education__card__content">
+                        <div class="education__card--school">
+                            <a href = "https://www.brainstation.io"><img class="education__card--logo" src="assets/images/bs-asset.png" alt="bs-logo"></a>
+                            <h3 class="education__card__header">Brainstation</h3>
+                        </div>
+                        <p class="education__card--program">Software Engineering</p>
+                        <div class="education__card--activity">
+                            <p class="education__card__description">HTML, CSS, JavaScript, React</p>
+                            <p class="education__card__description">Immersive, project based full-stack software engineering</p>
+                        </div>
                     </div>
-                    <p class="education__card--program">Software Engineering</p>
-                    <div class="education__card--activity">
-                        <p class="education__card__description">HTML, CSS, JavaScript, React</p>
-                        <p class="education__card__description">Immersive, project based full-stack software engineering</p>
+                    <div class="education__card__location">
+                        <p class="education__card--date">2022-2023 | Toronto, ON</p>
                     </div>
-                </div>
-                <div class="education__card__location">
-                    <p class="education__card--date">2022-2023 | Toronto, ON</p>
-                </div>
-            </article>
-            <article class="education__card">
-                <div class="education__card__content">
-                    <div class="education__card--school">
-                        <a href = "https://www.torontomu.ca/"><img class="education__card--logo" src="assets/images/toronto_met-300x172.png" alt="tmu-logo"></a>
-                        <h3 class="education__card__header">Toronto Metropolitan University</h3>
+                </article>
+                <article class="education__card">
+                    <div class="education__card__content">
+                        <div class="education__card--school">
+                            <a href = "https://www.torontomu.ca/"><img class="education__card--logo" src="assets/images/toronto_met-300x172.png" alt="tmu-logo"></a>
+                            <h3 class="education__card__header">Toronto Metropolitan University</h3>
+                        </div>
+                        <p class="education__card--program">Computer Science with Applications</p>
+                        <div class="education__card--activity">
+                            <p class="education__card__description">Python, Java, Shell, C, C++</p>
+                            <p class="education__card__description">Post-graduate certificate for university level computer science</p>
+                            <p class="education__card__description">Relevant courses: Object Oriented Programming, Data Structures, Algorithms, Artifical Intelligence, Data Science</p>
+                        </div>
                     </div>
-                    <p class="education__card--program">Computer Science with Applications</p>
-                    <div class="education__card--activity">
-                        <p class="education__card__description">Python, Java, Shell, C, C++</p>
-                        <p class="education__card__description">Post-graduate certificate for university level computer science</p>
-                        <p class="education__card__description">Relevant courses: Object Oriented Programming, Data Structures, Algorithms, Artifical Intelligence, Data Science</p>
+                    <div class="education__card__location">
+                        <p class="education__card--date">2019-2020 | Toronto, ON</p>
                     </div>
-                </div>
-                <div class="education__card__location">
-                    <p class="education__card--date">2019-2020 | Toronto, ON</p>
-                </div>
-            </article>
-            <article class="education__card">
-                <div class="education__card__content">
-                    <div class="education__card--school">
-                        <a href = "https://brocku.ca/"><img class="education__card--logo" src="assets/images/Brock-University-Logo.webp" alt="bu-logo"></a>
-                        <h3 class="education__card__header">Brock University</h3>
+                </article>
+                <article class="education__card">
+                    <div class="education__card__content">
+                        <div class="education__card--school">
+                            <a href = "https://brocku.ca/"><img class="education__card--logo" src="assets/images/Brock-University-Logo.webp" alt="bu-logo"></a>
+                            <h3 class="education__card__header">Brock University</h3>
+                        </div>
+                        <p class="education__card--program">Bachelors of Accounting</p>
+                        <div class="education__card--activity">
+                            <p class="education__card__description">Graduated with honors and successful internships</p>
+                        </div>
                     </div>
-                    <p class="education__card--program">Bachelors of Accounting</p>
-                    <div class="education__card--activity">
-                        <p class="education__card__description">Graduated with honors and successful internships</p>
+                    <div class="education__card__location">
+                        <p class="education__card--date">2013-2018 | St. Catharines, ON</p>
                     </div>
-                </div>
-                <div class="education__card__location">
-                    <p class="education__card--date">2013-2018 | St. Catharines, ON</p>
-                </div>
-            </article>
-            <article class="education__card">
-                <div class="education__card__content">
-                    <div class="education__card--school">
-                        <a href = "https://www.uibk.ac.at/en/"><img class="education__card--logo" src="assets/images/GY45SarUP3KZJkxYlLSQLraMb2Pe480GOeMgkxkF.jpg" alt="uibk-logo"></a>
-                        <h3 class="education__card__header">University of Innsbruck</h3>
+                </article>
+                <article class="education__card">
+                    <div class="education__card__content">
+                        <div class="education__card--school">
+                            <a href = "https://www.uibk.ac.at/en/"><img class="education__card--logo" src="assets/images/GY45SarUP3KZJkxYlLSQLraMb2Pe480GOeMgkxkF.jpg" alt="uibk-logo"></a>
+                            <h3 class="education__card__header">University of Innsbruck</h3>
+                        </div>
+                        <p class="education__card--program">International Economics</p>
+                        <div class="education__card--activity">
+                            <p class="education__card__description">Exchange term to Austria.</p>
+                            <p class="education__card__description">Studied German language and economics</p>
+
+                        </div>
                     </div>
-                    <p class="education__card--program">International Economics</p>
-                    <div class="education__card--activity">
-                        <p class="education__card__description">Exchange term to Austria. Studied German language and economics</p>
+                    <div class="education__card__location">
+                        <p class="education__card--date">2018-2018 | Innsbruck, Tirol</p>
                     </div>
-                </div>
-                <div class="education__card__location">
-                    <p class="education__card--date">2018-2018 | Innsbruck, Tirol</p>
-                </div>
-            </article>
+                </article>
+            </div>
         </section>
         <section class="projects">
-            <article class="projects projects__card">
-                <div class="projects projects__about">
-                    <h3 class="projects__about projects__about--header">Still Alive</h3>
-                        <p class="projects__about projects__about--skills">JavaScript, HTML, CSS, WebGL</p>
-                        <p class="projects__about projects__about--blurb">A procedurally top-down shooter built in vanilla JavaScript</p>
-                        <a class="projects__about projects__about--button">DETAILS</a>
+            <h3 class="projects__header">Projects</h3>
+            <div class="projects__portfolio">
+                <article class="projects__card">
+                    <div class="projects__content">
+                        <h3 class="projects__content--header">Still Alive</h3>
+                            <p class="projects__content--skills">JavaScript, HTML, CSS, WebGL</p>
+                            <p class="projects__content--blurb">A procedurally top-down shooter built in vanilla JavaScript</p>
+                            <a class="projects__content--button">DETAILS</a>
+                        </div>
                     </div>
-                </div>
-                <img class="projects projects--image" alt="still-alive">
-            </article>
-            <article class="projects projects__card">
-                <div class="projects projects__about">
-                    <h3 class="projects__about projects__about--header">AlphaHacks2020</h3>
-                        <p class="projects__about projects__about--skills">JavaScript, HTML, CSS, SQL</p>
-                        <p class="projects__about projects__about--blurb">A webapp connecting startups with investors. Winner of AlphaHacks 2020.</p>
-                        <a class="projects__about projects__about--button">DETAILS</a>
+                    <img class="projects projects--image" alt="still-alive">
+                </article>
+                
+                <article class="projects projects__card">
+                    <div class="projects projects__about">
+                        <h3 class="projects__about projects__about--header">AlphaHacks2020</h3>
+                            <p class="projects__about projects__about--skills">JavaScript, HTML, CSS, SQL</p>
+                            <p class="projects__about projects__about--blurb">A webapp connecting startups with investors. Winner of AlphaHacks 2020.</p>
+                            <a class="projects__about projects__about--button">DETAILS</a>
+                        </div>
                     </div>
-                </div>
-                <img class="projects projects--image" alt="alphahacks-2020">
-            </article>
-            <article class="projects projects__card">
-                <div class="projects projects__about">
-                    <h3 class="projects__about projects__about--header">Lost in Funland</h3>
-                        <p class="projects__about projects__about--skills">JavaScript, HTML, CSS</p>
-                        <p class="projects__about projects__about--blurb">An endless faller type game with procedurally generated environments. Built in vanilla JavaScript.</p>
-                        <a class="projects__about projects__about--button">DETAILS</a>
+                    <img class="projects projects--image" alt="alphahacks-2020">
+                </article>
+                <article class="projects projects__card">
+                    <div class="projects projects__about">
+                        <h3 class="projects__about projects__about--header">Lost in Funland</h3>
+                            <p class="projects__about projects__about--skills">JavaScript, HTML, CSS</p>
+                            <p class="projects__about projects__about--blurb">An endless faller type game with procedurally generated environments. Built in vanilla JavaScript.</p>
+                            <a class="projects__about projects__about--button">DETAILS</a>
+                        </div>
                     </div>
-                </div>
-                <img class="projects projects--image" alt="lost-in-funland">
-            </article>
-            <article class="projects projects__card">
-                <div class="projects projects__about">
-                    <h3 class="projects__about projects__about--header">RUHacks2020</h3>
-                        <p class="projects__about projects__about--skills">Python, JavaScript, Google Cloud, HTML, CSS</p>
-                        <p class="projects__about projects__about--blurb">A webapp that assists with student productivity. Uses Google Calendar API to calculate distance between locations and optimize schedules. Top 30 in RUHacks2020.</p>
-                        <a class="projects__about projects__about--button">DETAILS</a>
+                    <img class="projects projects--image" alt="lost-in-funland">
+                </article>
+                <article class="projects projects__card">
+                    <div class="projects projects__about">
+                        <h3 class="projects__about projects__about--header">RUHacks2020</h3>
+                            <p class="projects__about projects__about--skills">Python, JavaScript, Google Cloud, HTML, CSS</p>
+                            <p class="projects__about projects__about--blurb">A webapp that assists with student productivity. Uses Google Calendar API to calculate distance between locations and optimize schedules. Top 30 in RUHacks2020.</p>
+                            <a class="projects__about projects__about--button">DETAILS</a>
+                        </div>
                     </div>
-                </div>
-                <img class="projects projects--image" alt="ruhacks-2020">
-            </article>
+                    <img class="projects projects--image" alt="ruhacks-2020">
+                </article>
+            </div>
         </section>
     </main>
     <footer class="site-footer">
