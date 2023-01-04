@@ -105,6 +105,7 @@
         }
         &--skills {
             margin:0;
+            color:#008073;
         }
         &--date {
             margin:0;
@@ -199,6 +200,10 @@
             gap:1rem;
             margin:0;
         }
+        &__skills {
+            margin:0;
+            color:#008073;
+        }
         &__description {
             margin:0;
         }
@@ -212,12 +217,20 @@
     }
 }
 .projects {
-    margin:1.5rem 0;    
+    margin:1.5rem 0;
 
     &__portfolio {
-        display:flex;
+        display:display;
         flex-direction:column;
-        gap:0rem;
+        justify-content:center;
+        //margin:1.5rem 4rem;
+        //grid-template-columns:fit-content(100%);
+        gap:1rem;
+    }
+
+    &__content {
+        padding:1.5rem;
+        margin:0;
     }
 
     &__header {
@@ -240,4 +253,23 @@
         overflow:hidden;
         box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
     }
+    &__image {
+        width:100%;
+        height:20rem;
+    }
+
+//tablet media query
+/*     &__card {
+        background-color:$White;
+        padding:0;
+        margin:0;
+        width:49%;
+        display:flex;
+        flex-direction:column;
+        gap:0;
+        border-radius:2px;
+        background-clip:padding-box;
+        overflow:hidden;
+        box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12);
+    } */
 }

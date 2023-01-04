@@ -52,17 +52,22 @@ li {
     background-color: $BandSite-Black;
     position:fixed;
     width:100%;
+    display:flex;
+    flex-direction:row;
+    justify-content:flex-start;
+    align-items:center;
+    padding:0 4rem;
 
+    &__name {
+        text-decoration:none;
+    }
     &__nav {
         @include mobile-sub-header;
         color:darkblue;
         display: flex;
         flex-direction: column;
         align-items: center;
-
-        &__name {
-            width: 8rem;
-        }
+        margin-left:auto;
 
         &__directory {
             display: flex;
@@ -129,176 +134,9 @@ li {
     color: $White;
     background-color: $BandSite-Black;
 
-    &__body {
-        display: flex;
-        flex-direction: column;
-        padding: 16px;
-        width: auto;
-    }
-
-    &__container {
-        padding: 0;
-        margin: 0;
-    }
-
     &__header {
-        @include mobile-section-header;
-        padding: 0.5rem 0;
-        min-width:21rem;
-    }
-
-    &__nav {
-        display: flex;
-        flex-direction: row;
-        justify-content: flex-start;
-        align-items: center;
-        padding: 0.5rem 0;
-        gap: 16px;
-        min-width:fit-content;
-
-        &__logo {
-            width: 2rem;
-            height: 2rem;
-            padding: 0;
-        }
-    }
-
-    &__bookings {
-        //flex-wrapping this element future proofs for newer added booking agencies
-        @include mobile-footer-copy;
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-        padding: 0.5rem 0;
-        margin: 0;
-        gap:16px;
-
-        &__info {
-            display:flex;
-            flex-direction:column;
-            gap:1rem;
-        }
-
-        &__contact {
-            @include mobile-sub-header;
-            font-weight: 600;
-        }
-
-        &__email {
-            @include mobile-footer-copy;
-            color: $White;
-            padding-bottom: 0;
-        }
-    }
-
-    &__wordmark {
-        margin: 0;
-        margin-top: 2.5rem;
-        padding: 0;
-        padding-bottom: 2rem;
-        width: 8rem;
-    }
-
-    &__copyright {
-        @include mobile-footer-copy;
-        padding: 0;
-        margin: 0;
-    }
-
-    @include tablet {
-
-        &__body {
-            padding: 36px;
-        }
-    
-        &__container {
-            display: flex;
-            flex-direction: row;
-            gap: 24px;
-            position: relative;
-            margin: 0;
-            padding: 0;
-        }
-        
-        &__header {
-            @include tablet-section-header;
-        }
-
-        &__nav {
-            gap: 24px;
-
-            &__logo {
-                width: 2rem;
-                height: 2rem;
-            }
-        }
-    
-        &__bookings {
-            @include tablet-footer-copy;
-            display: flex;
-            flex-direction: row;
-            justify-content: flex-start;
-            gap: 32px;
-            margin: 0;
-            padding: 16px 0;
-    
-            &__info {
-                display: flex;
-                flex-direction: column;
-                align-items: flex-start;
-                gap: 1rem;
-                padding: 1rem 0;
-            }
-        }
-    
-        &__wordmark {
-            position: absolute;
-            right: 5%;
-            width: 10rem;
-            margin: 0.7rem;
-            padding: 0;
-        }
-        &__copyright {
-            @include tablet-footer-copy;
-            padding: 0;
-            margin: 0;
-        }
-        
-    }
-    
-    @include desktop {
-
-        &__body {
-            max-width: 1280px;
-            margin:auto;
-        }
-
-        &__container {
-            gap: 5.5rem;
-            padding-left: 0;
-            margin: 0;
-        }
-        
-        &__nav {
-            gap: 24px;
-        }
-
-        &__bookings {
-            gap: 6rem;
-            padding-left: 0;
-            margin: 0;
-        }
-
-        &__copyright {
-            padding: 0;
-            margin: 0;
-        }
-
-        &__wordmark {
-            position: relative;
-            left: 1100px;
-            top: -205px
-        }
-        
+        @include mobile-sub-header;
+        text-align:center;
+        margin:0;
     }
 }

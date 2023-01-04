@@ -13,9 +13,9 @@
 <body>
     <!-- To-do: Nav-bar header. ref: https://andrewborstein.com/ -->
     <header class="site-header">
-        <nav class="site-header site-header__nav">
-            <a class="site-header__name" href="./index.html">Edward Lee</a>
-            <ul class="site-header__nav site-header__nav__directory">
+        <a class="site-header__name" href="./index.html">Edward Lee</a>
+        <nav class="site-header__nav">
+            <ul class="site-header__nav__directory">
                 <li id="open"><a href="./assets/resume.png">
                         <i class="fa-solid fa-file"></i></a></li>
                 <li id="inactive"><a href="https://www.linkedin.com/in/edward-lee-183b878b/">
@@ -138,7 +138,7 @@
                         </div>
                         <p class="education__card--program">Software Engineering</p>
                         <div class="education__card--activity">
-                            <p class="education__card__description">HTML, CSS, JavaScript, React</p>
+                            <p class="education__card__skills">HTML, CSS, JavaScript, React</p>
                             <p class="education__card__description">Immersive, project based full-stack software engineering</p>
                         </div>
                     </div>
@@ -154,7 +154,7 @@
                         </div>
                         <p class="education__card--program">Computer Science with Applications</p>
                         <div class="education__card--activity">
-                            <p class="education__card__description">Python, Java, Shell, C, C++</p>
+                            <p class="education__card__skills">Python, Java, Shell, C, C++</p>
                             <p class="education__card__description">Post-graduate certificate for university level computer science</p>
                             <p class="education__card__description">Relevant courses: Object Oriented Programming, Data Structures, Algorithms, Artifical Intelligence, Data Science</p>
                         </div>
@@ -201,51 +201,46 @@
             <h3 class="projects__header">Projects</h3>
             <div class="projects__portfolio">
                 <article class="projects__card">
+                    <a href="https://js13kgames.com/entries/lost-in-funland"><img class="projects__image" src="/assets/images/lost_in_funland.png" alt="still-alive"></a>
                     <div class="projects__content">
                         <h3 class="projects__content--header">Still Alive</h3>
-                            <p class="projects__content--skills">JavaScript, HTML, CSS, WebGL</p>
-                            <p class="projects__content--blurb">A procedurally top-down shooter built in vanilla JavaScript</p>
-                            <a class="projects__content--button">DETAILS</a>
-                        </div>
+                        <p class="projects__content--skills">JavaScript, HTML, CSS, WebGL</p>
+                        <p class="projects__content--blurb">A procedurally top-down shooter built in vanilla JavaScript</p>
+                        <a class="projects__content--button">DETAILS</a>
                     </div>
-                    <img class="projects projects--image" alt="still-alive">
                 </article>
-                
-                <article class="projects projects__card">
-                    <div class="projects projects__about">
-                        <h3 class="projects__about projects__about--header">AlphaHacks2020</h3>
-                            <p class="projects__about projects__about--skills">JavaScript, HTML, CSS, SQL</p>
-                            <p class="projects__about projects__about--blurb">A webapp connecting startups with investors. Winner of AlphaHacks 2020.</p>
-                            <a class="projects__about projects__about--button">DETAILS</a>
-                        </div>
+                <article class="projects__card">
+                    <a href="https://js13kgames.com/entries/lost-in-funland"><img class="projects__image" src="/assets/images/lost_in_funland.png" alt="still-alive"></a>
+                    <div class="projects__content">
+                        <h3 class="projects__content--header">Still Alive</h3>
+                        <p class="projects__content--skills">JavaScript, HTML, CSS, WebGL</p>
+                        <p class="projects__content--blurb">A procedurally top-down shooter built in vanilla JavaScript</p>
+                        <a class="projects__content--button">DETAILS</a>
                     </div>
-                    <img class="projects projects--image" alt="alphahacks-2020">
                 </article>
-                <article class="projects projects__card">
-                    <div class="projects projects__about">
-                        <h3 class="projects__about projects__about--header">Lost in Funland</h3>
-                            <p class="projects__about projects__about--skills">JavaScript, HTML, CSS</p>
-                            <p class="projects__about projects__about--blurb">An endless faller type game with procedurally generated environments. Built in vanilla JavaScript.</p>
-                            <a class="projects__about projects__about--button">DETAILS</a>
-                        </div>
+                <article class="projects__card">
+                    <a href="https://js13kgames.com/entries/lost-in-funland"><img class="projects__image" src="/assets/images/lost_in_funland.png" alt="still-alive"></a>
+                    <div class="projects__content">
+                        <h3 class="projects__content--header">Still Alive</h3>
+                        <p class="projects__content--skills">JavaScript, HTML, CSS, WebGL</p>
+                        <p class="projects__content--blurb">A procedurally top-down shooter built in vanilla JavaScript</p>
+                        <a class="projects__content--button">DETAILS</a>
                     </div>
-                    <img class="projects projects--image" alt="lost-in-funland">
                 </article>
-                <article class="projects projects__card">
-                    <div class="projects projects__about">
-                        <h3 class="projects__about projects__about--header">RUHacks2020</h3>
-                            <p class="projects__about projects__about--skills">Python, JavaScript, Google Cloud, HTML, CSS</p>
-                            <p class="projects__about projects__about--blurb">A webapp that assists with student productivity. Uses Google Calendar API to calculate distance between locations and optimize schedules. Top 30 in RUHacks2020.</p>
-                            <a class="projects__about projects__about--button">DETAILS</a>
-                        </div>
+                <article class="projects__card">
+                    <a href="https://js13kgames.com/entries/lost-in-funland"><img class="projects__image" src="/assets/images/lost_in_funland.png" alt="still-alive"></a>
+                    <div class="projects__content">
+                        <h3 class="projects__content--header">Still Alive</h3>
+                        <p class="projects__content--skills">JavaScript, HTML, CSS, WebGL</p>
+                        <p class="projects__content--blurb">A procedurally top-down shooter built in vanilla JavaScript</p>
+                        <a class="projects__content--button">DETAILS</a>
                     </div>
-                    <img class="projects projects--image" alt="ruhacks-2020">
                 </article>
             </div>
         </section>
     </main>
     <footer class="site-footer">
-        <h3>Edward Lee</h3>
+        <h3 class="site-footer__header">Edward Lee</h3>
     </footer>
     <script src="scripts/index-page.js"></script>
 </body>
